@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title id="title">转账跳转中......</title>
+    </head>
+    <body>
+        <div id="container">
+        <h1>支付失败</h1>
+        <p>请使用支付宝、微信、QQ扫描付款码<p>
+        <div id="ua"><p>UA:</p></div>
+        <duv id="link"><p>URL:</p></div>
+        <script>
+            document.getElementById("link").innerHTML = ("URL:"+ window.location.href);
+            document.getElementById("ua").innerHTML = ("UA:" + navigator.userAgent);
+            document.getElementById("title").innerHTML = "支付失败";
+        </script>
+        </div>
+    </body>
+</html>
